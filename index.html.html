@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+			
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+			
+			<script src="https://kit.fontawesome.com/1ee1c3d7ba.js" crossorigin="anonymous"></script>
+
+
+    <title>MyApp</title>
+	
+	<style type="text/css">
+	
+	body{
+		text-align: center;
+		position: relative;
+	}
+	
+	.jumbotron{
+		background-image: url("clouds.jpg");
+		background-size:cover;	
+	}
+	
+	#email{
+		padding:5px;
+	}
+	
+	#signUpButton{
+		padding: 5px;
+		margin-left: 3px;
+	}
+	
+	span.icon {
+		font-family: FontAwesome;
+	}
+	
+	.card-deck{
+		margin-bottom: 25px;
+		
+	}
+	
+	#download{
+		background-color: #7FA3BB;
+		height: 450px;
+	
+	}
+	
+	</style>
+	
+  </head>
+  <body>
+<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="myNavbar">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">MyApp</a>
+
+	  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#about">About</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#download">Download the App</a>
+		  </li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+		  <input class="form-control mr-sm-2" type="username" placeholder="Username" aria-label="username">
+		  <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="password">
+		  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+		</form>
+	  </div>
+	</nav>
+	
+<!--Jumbotron-->
+	<div data-spy="scroll" data-target="#home" data-offset="0" class="jumbotron d-flex align-items-center" id="home">
+	  <div class="container">
+	  <h1 class="display-4">Super Cool App!</h1>
+	  <p class="lead">This app is freaking amazing.</p>
+	  <hr class="my-4">
+	  <p>Sign up for our mailing list to stay in the loop.</p> 
+	  
+		<div class="input-group justify-content-center" id="emailList">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="basic-addon1">@</span>
+		  </div>
+		  <input type="email" class="form-control col-3" id="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">   
+		  <a class="btn btn-primary btn-sm" href="#" role="button" id=signUpButton>Sign Up</a>
+		</div>	
+	  </div>
+	</div>
+
+	<!--About-->
+	<div data-spy="scroll" data-target="#about" data-offset="0"class="container d-flex justify-content-center align-items-center">
+	
+	<div id="about">
+		
+		<div id="AboutText">
+			
+			<h2>Why This App is Remarkable</h2>
+			<p>This app is huge.  Like the world has never seen.  This app makes apps great again. -- <i>President Donald J. Trump</i>
+		</div>
+	
+		<div class="card-deck">
+		  <div class="card">
+			<img src="hoodiegirl.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title"><i class="fas fa-air-freshener"></i> So Fresh<br></h5>
+			   <p class="card-text">And so clean (clean, clean).</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		  </div>
+		  <div class="card">
+			<img src="hiddendude.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title"><i class="fa fa-eye"></i> See and believe</h5>
+			 <p class="card-text">Seriously impressive.  Much wow.</p>
+			<a href="#" class="btn btn-primary">Do something</a>
+			</div>
+		  </div>
+		  <div class="card">
+			<img src="eating.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+			  	<h5 class="card-title"><i class="fas fa-bread-slice"></i>
+					 Better than sliced bread</h5>
+				<p class="card-text">C'mon, you know you love it.</p>
+				<a href="#" class="btn btn-primary">Be someone</a>
+			</div>
+		  </div>
+		</div>
+
+
+
+
+			
+		</div>	
+		</div>
+	</div>
+<!--download -->
+<div class="d-flex justify-content-center align-items-center" id="download">
+	 
+	
+	<div class="col-sm-6">
+	<h2>Download MyApp today!</h2>
+	<p>Join in on the experience.</p>
+	<img src="icons.png" width="100px">
+	
+</div>
+
+
+
+<script>
+
+$('body').scrollspy({ target: '#myNavbar' })
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+</script>
+
+  </body>
+</html>
